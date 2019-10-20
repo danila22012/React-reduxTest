@@ -1,10 +1,11 @@
 import React from 'react';
+    
 
 const Footer = ()=>{//react component(function)
     return(
-        <footer>
-            dev 2019
-        </footer>
+        <footer >
+            ASDASDAOSIDOAbackgroundColorSAKLDKASHDHASOI;DHASOI;D;HASIODOIASHDIOASHD
+        </footer>           
 
 
     )
