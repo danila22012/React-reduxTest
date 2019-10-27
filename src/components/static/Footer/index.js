@@ -1,10 +1,11 @@
 import React from 'react';
-    
+import './style.scss';
 
 const Footer = ()=>{//react component(function)
+    console.log('renderfooter')
     return(
-        <footer >
-            <h1>footer</h1>
+        <footer className="footer">
+            <h1 className="footer__">footer</h1>
         </footer>           
 
 

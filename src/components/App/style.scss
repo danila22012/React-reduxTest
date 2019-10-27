@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+.app{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.page{
+    min-height: 600px;
+    box-shadow: 0 0 3px 2px #000000;
+    padding: 15px;
+}
