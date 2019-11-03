@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../static/Footer';
 import Header from '../static/Header';
 import './style.scss'
-import Home from '../pages/Home'
+import Router from '../Router';
 
 
 function App() {
@@ -12,7 +12,7 @@ return(
         <div className="app">
             <Header/>
                 <main className="page"> 
-                    <Home />
+                    <Router />
                 </main>
             <Footer/>
         </div>
