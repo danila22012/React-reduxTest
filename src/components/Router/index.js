@@ -6,7 +6,9 @@ import Favorite from '../pages/Favorite';
 
 
 export default ()=>{
+
     return (
+
     <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/posts' component={Posts} />
