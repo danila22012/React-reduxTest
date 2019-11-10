@@ -7,7 +7,7 @@ import Router from '../Router';
 
 function App() {
 
-console.log('renderapp')
+
 return(   
         <div className="app">
             <Header/>

@@ -9,7 +9,6 @@ import { Provider } from 'react-redux'
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 
-
 const store = createStore(reducer, composeWithDevTools());
 
 
@@ -20,3 +19,6 @@ ReactDOM.render(
         </Provider>
     </BrowserRouter>,
     document.getElementById('root'));
+
+
+// rm -rf .git delete current git

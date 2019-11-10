@@ -1,16 +1,14 @@
 import React, { useEffect } from 'react';
 import './style.scss';
 import {connect} from 'react-redux';
-import { getPosts } from './service'
+import { getPosts } from '../../Shared/Handlers/postApiService'
 import Post from '../../Shared/Post'
 
 
 const Posts = (props) => {  
     
-    console.log(props);
+   
     const { posts, setPosts } = props;
-
-
 
     useEffect(() => {
 
@@ -18,7 +16,7 @@ const Posts = (props) => {
             .then(data => {
                 setPosts(data);
             })
-    }, [])
+    }, [setPosts])
     return (
         <div className="posts">
             <h1>Posts</h1>
@@ -43,10 +41,7 @@ const mapDispatchToProps = dispatch => {
         
     }
 
-
 }
-
-
 
 export default connect( mapStateToProps, mapDispatchToProps )(Posts);
 

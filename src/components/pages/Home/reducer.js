@@ -1,9 +1,23 @@
- 
 
 
+const initialState = {
+    lastPosts:[],
 
-export default function(){
-    return{
-        name:'home'
+
+}
+
+
+    
+export default (state = initialState, action)  => {
+    
+
+    switch (action.type){
+        case 'SET_LAST_POST':
+            return {
+                ...state, //пересоздаёт обьект с новым постс
+
+                lastPosts: action.posts,
+            }
+        default: return state;
     }
 }

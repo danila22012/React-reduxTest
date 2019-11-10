@@ -3,7 +3,7 @@ import './style.scss';
 import {NavLink} from 'react-router-dom'
 
 const Header = ()=>{//react component(function)
-    console.log('renderheader')
+   
 
 
     

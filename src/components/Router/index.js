@@ -14,6 +14,7 @@ export default ()=>{
         <Route path='/posts' component={Posts} />
         <Route path='/Favorite' component={Favorite} />
     </Switch>
+    
     )
     
 }

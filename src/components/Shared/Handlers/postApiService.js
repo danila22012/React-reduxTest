@@ -12,3 +12,13 @@ export function getPosts(){
         });
 
 }
+
+
+export function getlastPosts(limit){
+    
+    return fetch(`${BASE_URL}/posts/last/${limit}`)
+        .then((response)=>{
+            return response.json()
+        });
+
+}
