@@ -22,3 +22,9 @@ export function getlastPosts(limit){
         });
 
 }
+export function getPost(id){
+    return fetch(`${BASE_URL}/posts/${id}`)
+        .then((response)=>{
+            return response.json()
+        });
+}

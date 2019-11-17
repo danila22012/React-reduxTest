@@ -17,14 +17,14 @@ const Home = (props)=>{
     return(
         <div className="posts">
             <h1>Last Posts</h1>
-            {props.lastPosts.map( post => <Post key = {post.id} post = {post}/> )};
+            {props.lastPosts.map( post => <Post key = {post.id} post = {post}/> )}
         </div>
     )
 }
 
 const mapDispatchToProps = dispatch => { 
     return{
-        setLastPosts: posts => dispatch({type:"SET_LAST_POST", posts})
+         setLastPosts: posts => dispatch({type:"SET_LAST_POST", posts})
     }
 }
 const mapStateToProps = state => { 
@@ -33,4 +33,8 @@ const mapStateToProps = state => {
     }
 }
 
+
+
+
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
+

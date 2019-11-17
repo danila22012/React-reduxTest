@@ -32,6 +32,7 @@ const mapStateToProps = state => {
         posts: state.posts.list,
 
     }
+    
 }
 
 const mapDispatchToProps = dispatch => {
